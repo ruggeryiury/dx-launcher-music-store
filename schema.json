@@ -21,6 +21,14 @@
             "type": "string",
             "format": "uri"
           },
+          "thumbnail": {
+            "type": "string",
+            "format": "uri"
+          },
+          "markdown": {
+            "type": ["string", "null"],
+            "format": "uri"
+          },
           "downloadXbox": {
             "type": "string",
             "format": "uri"
@@ -32,23 +40,15 @@
           "downloadWii": {
             "type": "string",
             "format": "uri"
-          },
-          "thumbnail": {
-            "type": "string",
-            "format": "uri"
-          },
-          "markdown": {
-            "type": ["string", "null"],
-            "format": "uri"
           }
         },
         "required": [
           "name",
           "version",
           "dta",
-          "downloadXbox",
           "thumbnail",
-          "markdown"
+          "markdown",
+          "downloadXbox"
         ],
         "additionalProperties": false
       }
