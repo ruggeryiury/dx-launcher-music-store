@@ -1,0 +1,12 @@
+{
+  "$schema": "./schema.json",
+  "packages": [
+    {
+      "name": "Ruggy Customs",
+      "dta": "http://",
+      "download": "http://",
+      "thumbnail": "http://",
+      "markdown": "http://"
+    }
+  ]
+}

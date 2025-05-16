@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "packages": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "dta": {
+            "type": "string",
+            "format": "uri"
+          },
+          "download": {
+            "type": "string",
+            "format": "uri"
+          },
+          "thumbnail": {
+            "type": "string",
+            "format": "uri"
+          },
+          "markdown": {
+            "type": "string",
+            "format": "uri"
+          }
+        },
+        "required": ["name", "dta", "download", "thumbnail", "markdown"],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": ["$schema", "packages"],
+  "additionalProperties": false
+}
