@@ -7,47 +7,67 @@
     },
     "packages": {
       "type": "array",
+      "description": "An array with all packages to be displayed on DX Launcher.",
       "items": {
         "type": "object",
         "properties": {
           "name": {
-            "type": "string"
+            "type": "string",
+            "description": "The name of the song package."
           },
           "version": {
             "type": "number",
-            "minimum": 1
+            "minimum": 1,
+            "description": "The version of the song package."
+          },
+          "fileSize": {
+            "type": "string",
+            "pattern": "^\\d+(\\.\\d{1,2})?(KB|MB|GB|TB)$",
+            "description": "The file size of the song package. Must always be the file size of the Xbox 360 CON file format."
+          },
+          "songsCount": {
+            "type": "number",
+            "minimum": 1,
+            "description": "The number of the songs inside the song package."
           },
           "dta": {
             "type": "string",
-            "format": "uri"
+            "format": "uri",
+            "description": "The URL of the songs.dta file inside the song package."
           },
           "thumbnail": {
             "type": "string",
-            "format": "uri"
+            "format": "uri",
+            "description": "The URL of the song package artwork.\nPreffered format and size: WEBP format, 256x256 pixels."
           },
           "markdown": {
-            "type": ["string", "null"],
-            "format": "uri"
+            "type": "string",
+            "format": "uri",
+            "description": "A description file in Markdown file format."
           },
           "downloadXbox": {
             "type": "string",
-            "format": "uri"
+            "format": "uri",
+            "description": "The Download URL of your song package in Xbox 360 CON Format."
           },
           "downloadPS3": {
             "type": "string",
-            "format": "uri"
+            "format": "uri",
+            "description": "The Download URL of your song package in PS3 PKG Format."
           },
           "downloadWii": {
             "type": "string",
-            "format": "uri"
+            "format": "uri",
+            "description": "The Download URL of your song package in Wii Format (Meta and Song folders), compressed in ZIP or 7ZIP format."
           }
         },
         "required": [
           "name",
           "version",
+          "fileSize",
+          "songsCount",
           "dta",
           "thumbnail",
-          "markdown",
           "downloadXbox"
         ],
         "additionalProperties": false
