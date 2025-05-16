@@ -3,10 +3,12 @@
   "packages": [
     {
       "name": "Ruggy Customs",
-      "dta": "http://",
-      "download": "http://",
-      "thumbnail": "http://",
-      "markdown": "http://"
+      "version": 1,
+      "dta": "https://cdn.discordapp.com/attachments/486389377338179584/1373002749012344832/songs.dta?ex=6828d3f4&is=68278274&hm=67fdaca958484e03fe42fa90bf6454cc5e2c6a02644f3bffaff873f2d5ce86a0&",
+      "downloadXbox": "https://drive.google.com/file/d/1HRhEPJwDfihpIArJyK4nvU6YE0I4Nqvx/view?usp=drive_link",
+      "downloadPS3": "https://drive.google.com/file/d/16Z1sVQflXeZBgTA9c3wm448asOTg-JQg/view?usp=drive_link",
+      "thumbnail": "https://media.discordapp.net/attachments/424076935056982046/641672589579649044/c838829d-2000-4cd2-9356-aeb931d05f80.gif?ex=6828b6ab&is=6827652b&hm=d75f73babf40b54113fa34071129bcc5b2c84b9bf782213d691b4154e29ad955&=&width=256&height=256",
+      "markdown": null
     }
   ]
 }

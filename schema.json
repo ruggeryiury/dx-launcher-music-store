@@ -13,11 +13,23 @@
           "name": {
             "type": "string"
           },
+          "version": {
+            "type": "number",
+            "minimum": 1
+          },
           "dta": {
             "type": "string",
             "format": "uri"
           },
-          "download": {
+          "downloadXbox": {
+            "type": "string",
+            "format": "uri"
+          },
+          "downloadPS3": {
+            "type": "string",
+            "format": "uri"
+          },
+          "downloadWii": {
             "type": "string",
             "format": "uri"
           },
@@ -26,11 +38,18 @@
             "format": "uri"
           },
           "markdown": {
-            "type": "string",
+            "type": ["string", "null"],
             "format": "uri"
           }
         },
-        "required": ["name", "dta", "download", "thumbnail", "markdown"],
+        "required": [
+          "name",
+          "version",
+          "dta",
+          "downloadXbox",
+          "thumbnail",
+          "markdown"
+        ],
         "additionalProperties": false
       }
     }
