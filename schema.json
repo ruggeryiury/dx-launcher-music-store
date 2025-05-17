@@ -18,17 +18,24 @@
           "version": {
             "type": "number",
             "minimum": 1,
-            "description": "The version of the song package."
+            "description": "The version of the song package.",
+            "default": 1
+          },
+          "hash": {
+            "type": "string",
+            "pattern": "[A-Fa-f0-9]{128}",
+            "description": "The hash of the song package."
           },
           "fileSize": {
             "type": "string",
             "pattern": "^\\d+(\\.\\d{1,2})?(KB|MB|GB|TB)$",
-            "description": "The file size of the song package. Must always be the file size of the Xbox 360 CON file format."
+            "description": "The file size of the song package. Must always be the file size of the PS3 PKG file."
           },
           "songsCount": {
             "type": "number",
             "minimum": 1,
-            "description": "The number of the songs inside the song package."
+            "description": "The number of the songs inside the song package.",
+            "default": 1
           },
           "dta": {
             "type": "string",
@@ -64,11 +71,13 @@
         "required": [
           "name",
           "version",
+          "hash",
           "fileSize",
           "songsCount",
           "dta",
           "thumbnail",
-          "downloadXbox"
+          "downloadXbox",
+          "downloadPS3"
         ],
         "additionalProperties": false
       }
